@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body class="font-[Ubuntu]">
+    <!-- NAVBAR -->
+    <div>
+      <nav class="md:w-[89%] w-[95%] my-0 mx-auto flex justify-between p-2 items-center">
+        <div>
+          <a href=""><h1 class="text-3xl drop-shadow text-[#FFAFCC] font-bold">IMAGINE</h1></a>
+        </div>
+
+        <div
+          class="duration-300 nav-menu bg-[#FFAFCC] md:bg-transparent w-full md:w-auto absolute md:static top-[6.5%] right-0 min-h-[60vh] md:min-h-0 flex justify-center items-center right-[-100%] z-20"
+        >
+          <ul class="flex items-center md:space-y-0 space-y-20 md:gap-6 flex-col md:flex-row">
+            <li>
+              <a class="text-white md:text-black" href="/">Home</a>
+            </li>
+            <li>
+              <a class="text-white md:text-black" href="/">About</a>
+            </li>
+            <li>
+              <a class="text-white md:text-black" href="/">Services</a>
+            </li>
+            <li>
+              <a class="text-white md:text-black" href="/">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <ion-icon class="text-2xl mr-5" name="moon-outline"></ion-icon>
+          <ion-icon class="text-2xl mobile-icon" name="menu"></ion-icon>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="h-[100vh] bg-[#BDE0FE] overflow-hidden relative">
+      <div
+        class="md:w-[89%] w-[95%] my-0 mx-auto bg-[#BDE0FE] flex flex-col items-center md:grid md:grid-cols-3 justify-between h-[100vh]"
+      >
+        <div class="flex justify-center flex-col items-center mt-8">
+          <h1 class="text-center text-white md:text-8xl font-bold inline drop-shadow-lg">IMAGINE MEDIA</h1>
+          <h3 class="text-center text-white drop-shadow-lg text-2xl font-bold">DREAMS COME TRUE</h3>
+          <button>More Info</button>
+        </div>
+
+        <div class="relative flex items-center justify-center col-span-2">
+          <img
+            class="z-10 w-auto md:min-h-[800px] lg:min-h-[100vh] min-h-[475px] object-cover"
+            src="/assets/AdobeStock_531322767.png"
+            alt=""
+          />
+          <div
+            class="rounded-full md:left-0 md:h-[1000px] md:w-[1000px] lg:h-[800px] lg:w-[800px] w-[600px] h-[600px] bg-[#FFAFCC] absolute right-[-13%] bottom-[-60%]"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <script src="/src/app.js"></script>
+  </body>
+</html>
