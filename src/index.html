@@ -8,18 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body class="font-[Ubuntu]">
-    <!-- NAVBAR -->
+    <!---------------------------------NVIGATION SECTION ------------------------------------>
     <div>
-      <nav class="md:w-[89%] w-[95%] my-0 mx-auto flex justify-between p-2 items-center">
+      <nav class="md:w-[89%] w-[95%] my-0 mx-auto flex justify-between p-2 items-center overflow-hidden">
         <div>
           <a href=""><h1 class="text-3xl drop-shadow text-[#FFAFCC] font-bold">IMAGINE</h1></a>
         </div>
 
         <div
-          class="duration-300 nav-menu bg-[#FFAFCC] md:bg-transparent w-full md:w-auto absolute md:static top-[6.5%] right-0 min-h-[100vh] md:min-h-0 flex justify-center items-center right-[-100%] z-20"
+          class="duration-300 nav-menu bg-[#FFAFCC] md:bg-transparent w-full md:w-auto fixed md:static top-[6.5%] right-0 min-h-[100vh] md:min-h-0 flex justify-center items-center right-[-100%] z-20"
         >
           <ul class="flex items-center md:space-y-0 space-y-20 md:gap-6 flex-col md:flex-row">
             <li>
@@ -43,10 +44,10 @@
         </div>
       </nav>
     </div>
+    <!---------------------------------END NAVIGATION SECTION ------------------------------------>
 
-    <!-- HEADER -->
-
-    <header class="h-[100vh] bg-[#BDE0FE] overflow-hidden relative">
+    <!---------------------------------HEADER SECTION ------------------------------------>
+    <header class="h-[100vh] bg-[#BDE0FE] overflow-hidden relative overflow-hidden">
       <div
         class="md:w-[89%] w-[95%] my-0 mx-auto bg-[#BDE0FE] flex flex-col items-center md:grid md:grid-cols-3 justify-between h-[100vh]"
       >
@@ -79,6 +80,51 @@
         </div>
       </div>
     </header>
+    <!---------------------------------END HEADER SECTION ------------------------------------>
+
+    <!---------------------------------SPONSORS SECTION ------------------------------------>
+    <section>
+      <div class="h-[100px] m-auto overflow-hidden relative w-auto">
+        <div class="slide-animation flex w-auto w-full gap-9">
+          <img
+            class="w-[150px]"
+            style="
+              filter: brightness(0) saturate(100%) invert(94%) sepia(75%) saturate(3380%) hue-rotate(288deg)
+                brightness(101%) contrast(106%);
+            "
+            src="/assets/USA-Today-logo.png"
+            alt=""
+          />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+          <img class="w-[150px]" src="/assets/USA-Today-logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!---------------------------------END SPONSER SECTION ------------------------------------>
+
+    <!---------------------------------INTERNAL CSS ------------------------------------>
+    <style>
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-500px);
+        }
+      }
+      .slide-animation {
+        animation: slide 30s linear infinite;
+      }
+    </style>
+    <!---------------------------------END INTERNAL CSS ------------------------------------>
 
     <script src="/src/app.js"></script>
   </body>
