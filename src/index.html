@@ -22,7 +22,9 @@
         <div
           class="duration-300 nav-menu bg-[#FFAFCC] md:bg-transparent w-full md:w-auto fixed md:static top-[6.5%] right-0 min-h-[100vh] md:min-h-0 flex justify-center items-center right-[-100%] z-20"
         >
-          <ul class="flex items-center md:space-y-0 space-y-20 md:gap-6 flex-col md:flex-row text-white md:text-[#5b5b5b]">
+          <ul
+            class="flex items-center md:space-y-0 space-y-20 md:gap-6 flex-col md:flex-row text-white md:text-[#5b5b5b]"
+          >
             <li>
               <a href="/">Home</a>
             </li>
@@ -36,7 +38,7 @@
               <a href="/">Contact</a>
             </li>
           </ul>
-          </div>
+        </div>
 
         <div class="md:hidden flex items-center">
           <ion-icon class="text-2xl mr-5" name="moon-outline"></ion-icon>
@@ -86,53 +88,29 @@
     <section>
       <div class="h-[100px] flex items-center m-auto overflow-hidden relative w-auto flex-col">
         <h1 class="mt-2 text-1xl drop-shadow text-[#8D8A88]">FEATURED IN</h1>
-        <div style="
-        filter: brightness(0) saturate(100%) invert(94%) sepia(75%) saturate(3380%) hue-rotate(288deg)
-          brightness(101%) contrast(106%)" class="slide-animation items-center flex w-auto w-full gap-9">
-          <img
-            class="max-w-[130px]"
-            src="/assets/Logos/usatoday.png"
-            alt="usa logo"
-          />
-          <img
-            class="max-w-[130px]"
-            src="/assets/Logos/techcrunch.png"
-            alt="tech crunch logo"
-          /><img
+        <div
+          style="
+            filter: brightness(0) saturate(100%) invert(94%) sepia(75%) saturate(3380%) hue-rotate(288deg)
+              brightness(101%) contrast(106%);
+          "
+          class="slide-animation items-center flex w-auto w-full gap-9"
+        >
+          <img class="max-w-[130px]" src="/assets/Logos/usatoday.png" alt="usa logo" />
+          <img class="max-w-[130px]" src="/assets/Logos/techcrunch.png" alt="tech crunch logo" /><img
             class="max-w-[130px]"
             src="/assets/Logos/Lifehacker.svg.png"
             alt="life hacker logo"
-          /><img
-            class="max-w-[130px]"
-            src="/assets/Logos/Gizmodo.png"
-            alt="gizmodo logo"
-          /><img
+          /><img class="max-w-[130px]" src="/assets/Logos/Gizmodo.png" alt="gizmodo logo" /><img
             class="max-w-[130px]"
             src="/assets/Logos/tnwlogo.png"
             alt="tnw logo"
-          /><img
-          class="max-w-[130px]"
-            src="/assets/Logos/Engadget-logo.svg.png"
-            alt="engadget logo"
-          /><img
-          class="max-w-[130px]"
+          /><img class="max-w-[130px]" src="/assets/Logos/Engadget-logo.svg.png" alt="engadget logo" /><img
+            class="max-w-[130px]"
             src="/assets/Logos/Le_Monde.svg.png"
             alt="lemonde logo"
-          /><img
-          class="max-w-[130px]"
-            src="/assets/Logos/Moz_logo.svg.png"
-            alt="moz logo"
-          />
-          <img
-          class="max-w-[130px]"
-            src="/assets/Logos/Bloomberg_Logo.svg.png"
-            alt="bloomberg logo"
-          />
-          <img
-            class="max-w-[130px]"
-            src="/assets/Logos/buzzfeed.png"
-            alt="buzzfeed logo"
-          />
+          /><img class="max-w-[130px]" src="/assets/Logos/Moz_logo.svg.png" alt="moz logo" />
+          <img class="max-w-[130px]" src="/assets/Logos/Bloomberg_Logo.svg.png" alt="bloomberg logo" />
+          <img class="max-w-[130px]" src="/assets/Logos/buzzfeed.png" alt="buzzfeed logo" />
         </div>
       </div>
     </section>
@@ -144,7 +122,7 @@
         <h1 class="text-3xl text-[#FFAFCC]">CHOOSE YOUR PACKAGE</h1>
         <p>All packages includes 24 hour maitnece</p>
       </div>
-      <div class="pricing-boxes flex items-center justify-center gap-2 flex-wrap">
+      <div class="pricing-boxes flex items-center justify-center gap-2 mb-4 flex-wrap">
         <div class="box-1 w-[250px] bg-white text-center rounded shadow-xl">
           <div class="box-title my-3">
             <h3 class="text-2xl">DREAMER</h3>
@@ -164,9 +142,9 @@
           </div>
         </div>
 
-        <div class="box-1 w-[250px] bg-[#ffc8dd] text-center rounded shadow-xl scale-110">
+        <div class="box-1 w-[250px] bg-white text-center rounded shadow-xl scale-110">
           <div class="box-title my-3">
-            <h3 class="text-2xl text-white drop-shadow-xl">IMAGINATIVE</h3>
+            <h3 class="text-2xl text-black drop-shadow-xl">IMAGINATIVE</h3>
           </div>
           <div class="box-pricing mb-3">
             <p class="text-3xl text-[#8D8A88]">$300.00</p>
@@ -179,7 +157,7 @@
             <p class="border-b-2 p-1">5 Email Accounts</p>
           </div>
           <div class="box-button mt-6">
-            <button class="bg-[#D1D0D0] py-2 px-4 w-full ">Purchase Now</button>
+            <button class="bg-[#ffc8dd] py-2 px-4 w-full">Purchase Now</button>
           </div>
         </div>
 
@@ -201,7 +179,39 @@
             <button class="bg-[#ffc8dd] py-2 px-4 w-full">Purchase Now</button>
           </div>
         </div>
+      </div>
+    </div>
 
+    <!--------------------------------- END PRICING SECTION ------------------------------------>
+
+    <!---------------------------------ABOUT SECTION ------------------------------------>
+    <section class="p-5">
+      <div class="md:w-[89%] w-[95%] mx-auto flex max-[885px]:flex-col mt-5 items-center justify-center gap-4">
+        <div class="lg:mr-[-7rem] z-10">
+          <img
+            class="lg:w-[89%] max-md:w-[full] mx-auto max-[885px]:h-[450px]"
+            src="/assets/AboutImage.png"
+            alt="about image"
+          />
+        </div>
+
+        <div
+          class="bg-[#ffc8dd] p-5 h-[300px] max-lg:h-[400px] grid w-full grid-cols-2 items-center justify-center rounded-xl text-right overflow-hidden"
+        >
+          <div></div>
+          <div class="col-span-2 flex-col">
+            <h1 class="text-white text-4xl drop-shadow mb-[2rem]">ABOUT US</h1>
+            <p class="text-white drop-shadow mb-[3.5rem]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum temporibus minima aut ipsa nobis accusamus
+              unde soluta voluptatum aperiam vitae animi, beatae quos quod, provident neque in? Quasi, dolore iure.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius numquam est repellendus natus. A
+              nesciunt, eveniet cupiditate id non esse blanditiis quaerat, alias, nemo tenetur dolores omnis sit
+              assumenda!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!---------------------------------INTERNAL CSS ------------------------------------>
     <style>
       @keyframes slide {
