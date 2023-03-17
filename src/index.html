@@ -117,12 +117,12 @@
     <!---------------------------------END SPONSER SECTION ------------------------------------>
 
     <!---------------------------------PRICING SECTION ------------------------------------>
-    <div class="pricing-table p-3 bg-[#BDE0FE]">
+    <div class="pricing-table p-5 pb-8 bg-[#BDE0FE]">
       <div class="text-center mb-20">
         <h1 class="text-3xl text-[#FFAFCC]">CHOOSE YOUR PACKAGE</h1>
         <p>All packages includes 24 hour maitnece</p>
       </div>
-      <div class="pricing-boxes flex items-center justify-center gap-2 mb-4 flex-wrap">
+      <div class="pricing-boxes flex items-center justify-center gap-2 mb-10 flex-wrap">
         <div class="box-1 w-[250px] bg-white text-center rounded shadow-xl">
           <div class="box-title my-3">
             <h3 class="text-2xl">DREAMER</h3>
@@ -212,6 +212,97 @@
         </div>
       </div>
     </section>
+    <!---------------------------------END ABOUT SECTION ------------------------------------>
+
+    <!---------------------------------CONTACT SECTION ------------------------------------>
+
+    <div class="p-2">
+      <div class="grid p-5 item-center justify-items-center grid-cols-2">
+        <div class="p-4 h-200 w-full flex flex-col justify-center gap-4">
+          <div
+            class="group rounded-xl bg-white self-end shadow p-3 flex flex-row items-center sm:max-w-[375px] sm:min-w-[375px] justify-center gap-4 border overflow-hidden relative cursor-pointer"
+          >
+            <span
+              class="absolute left-16 z-0 h-12 w-12 rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:scale-[20] mx-auto"
+            ></span>
+            <span
+              class="grid h-16 w-16 place-items-center rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:bg-white z-10"
+            >
+              <ion-icon class="p-3 rounded-full text-4xl text-white group-hover:bg-[#BDE0FE]" name="call"></ion-icon>
+            </span>
+            <span class="text-[24px] drop-shadow-lg group-hover:text-white duration-300 drop-shadow-sm text-gray-400"
+              >1800-382-4937
+            </span>
+          </div>
+          <div
+            class="group rounded-xl bg-white self-end shadow p-3 flex flex-row items-center h-24 justify-center gap-4 border overflow-hidden relative sm:max-w-[375px] sm:min-w-[375px] cursor-pointer"
+          >
+            <span
+              class="absolute left-12 z-0 h-12 w-12 rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:scale-[20] mx-auto shadow-lg"
+            ></span>
+            <span
+              class="grid h-16 w-16 place-items-center rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:bg-white z-10"
+            >
+              <ion-icon class="p-3 rounded-full text-4xl text-white group-hover:bg-[#BDE0FE]" name="mail"></ion-icon>
+            </span>
+            <span class="drop-shadow-sm text-gray-400 group-hover:text-white duration-300 text-[24px]"
+              >info@imagine.com</span
+            >
+          </div>
+          <div
+            class="group rounded-xl self-end shadow p-3 flex items-center h-24 justify-around border overflow-hidden relative sm:max-w-[375px] sm:min-w-[375px] cursor-pointer bg-[#ffc8dd] space-x-5"
+          >
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-twitter"></ion-icon>
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-linkedin"></ion-icon>
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-facebook"></ion-icon>
+          </div>
+        </div>
+
+        <div class="p-5 w-3/4 bg-[#BDE0FE] justify-self-start rounded-xl">
+          <div class="w-[90%] mx-auto">
+            <form class="w-full mx-auto mr-5">
+              <div class="mb-4">
+                <label class="block text-gray-500 font-bold mb-2" for="name"> Name </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="name"
+                  type="text"
+                  placeholder="First and Last Name"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-500 font-bold mb-2" for="email"> Email </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-500 font-bold mb-2" for="reason"> Reason for Contact: </label>
+                <textarea
+                  class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="reason"
+                  rows="5"
+                  placeholder="Please enter your reason here"
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="bg-[#ffc8dd] shadow hover:bg-[#FFAFCC] duration-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="button"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!---------------------------------INTERNAL CSS ------------------------------------>
     <style>
       @keyframes slide {
