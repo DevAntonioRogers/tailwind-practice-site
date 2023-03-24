@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body class="font-[Ubuntu] overflow-x-hidden">
+    <!---------------------------------NVIGATION SECTION ------------------------------------>
+    <div>
+      <nav class="md:w-[89%] w-[95%] my-0 mx-auto flex justify-between p-2 items-center overflow-hidden">
+        <div>
+          <a href=""><h1 class="text-3xl drop-shadow text-[#FFAFCC] font-bold">IMAGINE</h1></a>
+        </div>
+
+        <div
+          class="duration-300 nav-menu bg-[#FFAFCC] md:bg-transparent w-full md:w-auto fixed md:static top-[6.5%] right-0 min-h-[100vh] md:min-h-0 flex justify-center items-center right-[-100%] z-20"
+        >
+          <ul
+            class="flex items-center md:space-y-0 space-y-20 md:gap-6 flex-col md:flex-row text-white md:text-[#5b5b5b]"
+          >
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/">Services</a>
+            </li>
+            <li>
+              <a href="/">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <ion-icon class="text-2xl mr-5" name="moon-outline"></ion-icon>
+          <ion-icon class="text-2xl mobile-icon" name="menu"></ion-icon>
+        </div>
+      </nav>
+    </div>
+    <!---------------------------------END NAVIGATION SECTION ------------------------------------>
+
+    <!---------------------------------HEADER SECTION ------------------------------------>
+    <header class="h-[100vh] bg-[#BDE0FE] overflow-hidden relative">
+      <div
+        class="md:w-[89%] w-[95%] my-0 mx-auto bg-[#BDE0FE] flex flex-col items-center md:grid md:grid-cols-3 justify-between h-[100vh]"
+      >
+        <div class="flex justify-center flex-col items-center md:mt-8 mt-[5rem]">
+          <h1 class="text-center text-white md:text-6xl font-bold inline drop-shadow-lg text-4xl">IMAGINE MEDIA</h1>
+          <h3 class="text-center text-white drop-shadow-lg md:text-2xl text-1xl font-bold">DREAMS COME TRUE</h3>
+          <div class="flex gap-4 md:gap-1 lg:gap-4 mt-6">
+            <a
+              class="duration-500 hover:bg-[#ffc8dd] bg-[#FFAFCC] py-1 px-6 rounded text-white shadow-lg drop-shadow"
+              href="/"
+              >Pricing</a
+            >
+            <a
+              class="duration-500 hover:bg-[#ffc8dd] bg-[#FFAFCC] py-1 px-6 rounded text-white shadow-lg drop-shadow"
+              href="/"
+              >More Info</a
+            >
+          </div>
+        </div>
+
+        <div class="relative flex items-center justify-center col-span-2">
+          <div class="z-10">
+            <img
+              class="z-10 w-[700px] md:min-h-[100vh] lg:min-h-[100vh] min-h-[475px] object-cover"
+              src="images/heroimage.png"
+              alt="main"
+            />
+          </div>
+          <div
+            class="rounded-full md:left-0 md:h-[800px] md:w-[800px] lg:h-[800px] lg:w-[800px] w-[600px] h-[600px] bg-[#FFAFCC] absolute bottom-[-60%]"
+          ></div>
+        </div>
+      </div>
+    </header>
+    <!---------------------------------END HEADER SECTION ------------------------------------>
+
+    <!---------------------------------SPONSORS SECTION ------------------------------------>
+    <section>
+      <div class="h-[100px] flex items-center m-auto overflow-hidden relative w-auto flex-col">
+        <h1 class="mt-2 text-1xl drop-shadow text-[#8D8A88]">FEATURED IN</h1>
+        <div
+          style="
+            filter: brightness(0) saturate(100%) invert(94%) sepia(75%) saturate(3380%) hue-rotate(288deg)
+              brightness(101%) contrast(106%);
+          "
+          class="slide-animation items-center flex w-auto w-full gap-9"
+        >
+          <img class="max-w-[130px]" src="images/usatoday.png" alt="usa logo" />
+          <img class="max-w-[130px]" src="images/techcrunch.png" alt="tech crunch logo" />
+          <img class="max-w-[130px]" src="images/lifehacker.png" alt="life hacker logo" />
+          <img class="max-w-[130px]" src="images/gizmodo.png" alt="gizmodo logo" />
+          <img class="max-w-[130px]" src="images/tnwlogo.png" alt="tnw logo" />
+          <img class="max-w-[130px]" src="images/engadget.png" alt="engadget logo" />
+          <img class="max-w-[130px]" src="images/lemonde.png" alt="lemonde logo" />
+          <img class="max-w-[130px]" src="images/moz.png" alt="moz logo" />
+          <img class="max-w-[130px]" src="images/bloom.svg.png" alt="bloomberg logo" />
+          <img class="max-w-[130px]" src="images/buzzfeed.png" alt="buzzfeed logo" />
+        </div>
+      </div>
+    </section>
+    <!---------------------------------END SPONSER SECTION ------------------------------------>
+
+    <!---------------------------------PRICING SECTION ------------------------------------>
+    <div class="pricing-table p-5 pb-8 bg-[#BDE0FE] relative">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl text-white drop-shadow-xl inline-block p-2 rounded-xl">CHOOSE YOUR PACKAGE</h1>
+        <p>All packages includes 24 hour maintenance</p>
+      </div>
+      <div class="pricing-boxes flex items-center justify-center gap-2 mb-10 flex-wrap">
+        <div class="box-1 w-[250px] bg-white text-center rounded shadow-xl">
+          <div class="box-title my-3">
+            <h3 class="text-2xl">DREAMER</h3>
+          </div>
+          <div class="box-pricing mb-3">
+            <p class="text-3xl text-[#8D8A88]">$80.00</p>
+            <span>a year</span>
+          </div>
+          <div class="box-features [&>p]:mb-3">
+            <p class="border-b-2 p-1 w-3/4 mx-auto">100 GB Storage</p>
+            <p class="border-b-2 p-1 w-3/4 mx-auto">2 Users Available</p>
+            <p class="border-b-2 p-1 w-3/4 mx-auto">1 Social Accounts</p>
+            <p class="border-b-2 p-1 w-3/4 mx-auto">1 Email Accounts</p>
+          </div>
+          <div class="box-button py-3">
+            <button class="bg-[#FFAFCC] py-2 px-4 w-3/4 rounded-xl">Purchase Now</button>
+          </div>
+        </div>
+
+        <div class="box-3 w-[250px] bg-white text-center rounded shadow-xl lg:scale-110">
+          <div class="box-title my-3">
+            <h3 class="text-2xl text-black drop-shadow-xl">IMAGINATIVE</h3>
+          </div>
+          <div class="box-pricing mb-3">
+            <p class="md:text-4xl text-3xl text-[#8D8A88]">$300.00</p>
+            <span>a year</span>
+          </div>
+          <div class="box-features [&>p]:mb-3">
+            <p class="border-b-2 w-3/4 p-1 mx-auto">500 GB Storage</p>
+            <p class="border-b-2 w-3/4 p-1 mx-auto">10 Users Available</p>
+            <p class="border-b-2 w-3/4 p-1 mx-auto">3 Social Accounts</p>
+            <p class="border-b-2 w-3/4 p-1 mx-auto">5 Email Accounts</p>
+          </div>
+          <div class="box-button py-3">
+            <button class="box-button rounded-xl bg-[#FFAFCC] py-2 px-4 w-3/4">Purchase Now</button>
+          </div>
+        </div>
+
+        <div class="box-2 w-[250px] bg-white text-center rounded shadow-xl">
+          <div class="box-title my-3">
+            <h3 class="text-2xl">THINKER</h3>
+          </div>
+          <div class="box-pricing mb-3">
+            <p class="text-3xl text-[#8D8A88]">$150.00</p>
+            <span>a year</span>
+          </div>
+          <div class="box-features [&>p]:mb-3">
+            <p class="border-b-2 p-1 w-3/4 mx-auto">250 GB Storage</p>
+            <p class="border-b-2 p-1 w-3/4 mx-auto">5 Users Available</p>
+            <p class="border-b-2 p-1 w-3/4 mx-auto">2 Social Accounts</p>
+            <p class="border-b-2 p-1 w-3/4 mx-auto">3 Email Accounts</p>
+          </div>
+          <div class="box-button py-3">
+            <button class="bg-[#FFAFCC] py-2 px-4 w-3/4 rounded-xl">Purchase Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- END PRICING SECTION ------------------------------------>
+
+    <!---------------------------------ABOUT SECTION ------------------------------------>
+    <section class="p-5">
+      <div class="md:w-[89%] w-[95%] mx-auto flex max-[885px]:flex-col mt-5 items-center justify-center gap-4">
+        <div class="lg:mr-[-7rem] z-10">
+          <img class="lg:w-[89%] max-md:w-[full] mx-auto max-[885px]:h-auto" src="images/about.png" alt="about image" />
+        </div>
+
+        <div
+          class="bg-[#ffc8dd] p-5 h-[300px] max-lg:h-[400px] grid w-full grid-cols-2 items-center justify-center rounded-xl text-right overflow-hidden"
+        >
+          <div></div>
+          <div class="col-span-2 flex-col max-[885px]:text-center">
+            <h1 class="text-white text-4xl drop-shadow mb-[2rem]">ABOUT US</h1>
+            <p class="text-white drop-shadow mb-[3.5rem]">
+              Imagine is a leading social media agency that specializes in creating innovative and effective digital
+              marketing strategies for businesses of all sizes. With a team of experienced social media experts,
+              Imagineoffers a wide range of services, including social media management, content creation, and
+              influencer marketing. The agency's goal is to help clients build a strong online presence and connect with
+              their target audience in a meaningful way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------END ABOUT SECTION ------------------------------------>
+
+    <!---------------------------------CONTACT SECTION ------------------------------------>
+
+    <div class="p-2">
+      <div class="grid p-5 items-center justify-items-center md:grid-cols-2">
+        <div
+          class="p-4 h-200 w-full flex flex-col justify-center gap-4 order-last mt-4 md:mt-0 md:order-first overflow-hidden"
+        >
+          <div
+            class="group rounded-xl bg-white self-center md:self-end shadow p-3 flex flex-row items-center max-w-[375px] min-w-[375px] justify-center gap-4 border overflow-hidden relative cursor-pointer"
+          >
+            <span
+              class="absolute left-16 z-0 h-12 w-12 rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:scale-[20] mx-auto"
+            ></span>
+            <span
+              class="grid h-16 w-16 place-items-center rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:bg-white z-10"
+            >
+              <ion-icon class="p-3 rounded-full text-4xl text-white group-hover:bg-[#BDE0FE]" name="call"></ion-icon>
+            </span>
+            <span class="text-[24px] drop-shadow-lg group-hover:text-white duration-300 drop-shadow-sm text-gray-400"
+              >1800-382-4937
+            </span>
+          </div>
+          <div
+            class="group rounded-xl bg-white self-center md:self-end shadow p-3 flex flex-row items-center h-24 justify-center gap-4 border overflow-hidden relative max-w-[375px] min-w-[375px] cursor-pointer"
+          >
+            <span
+              class="absolute left-12 z-0 h-12 w-12 rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:scale-[20] mx-auto shadow-lg"
+            ></span>
+            <span
+              class="grid h-16 w-16 place-items-center rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:bg-white z-10"
+            >
+              <ion-icon class="p-3 rounded-full text-4xl text-white group-hover:bg-[#BDE0FE]" name="mail"></ion-icon>
+            </span>
+            <span class="drop-shadow-sm text-gray-400 group-hover:text-white duration-300 text-[24px]"
+              >info@imagine.com</span
+            >
+          </div>
+          <div
+            class="group rounded-xl self-center md:self-end shadow p-3 flex items-center h-24 justify-around border overflow-hidden relative max-w-[375px] min-w-[375px] cursor-pointer bg-[#ffc8dd] space-x-5"
+          >
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-twitter"></ion-icon>
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-linkedin"></ion-icon>
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-facebook"></ion-icon>
+          </div>
+        </div>
+
+        <div class="p-5 w-full md:w-3/4 bg-[#BDE0FE] justify-self-start rounded-xl mx-auto overflow-hidden">
+          <div class="w-full mx-auto">
+            <form class="w-full mx-auto mr-5">
+              <div class="mb-4">
+                <label class="block text-gray-500 font-bold mb-2" for="name"> Name </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="name"
+                  type="text"
+                  placeholder="First and Last Name"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-500 font-bold mb-2" for="email"> Email </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-500 font-bold mb-2" for="reason"> Reason for Contact: </label>
+                <textarea
+                  class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="reason"
+                  rows="5"
+                  placeholder="Please enter your reason here"
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="bg-[#ffc8dd] shadow hover:bg-[#FFAFCC] duration-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="button"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------END CONTACT SECTION ------------------------------------>
+
+    <!---------------------------------FOOTER SECTION ------------------------------------>
+
+    <footer class="footer bg-[#FFAFCC] text-white relative mt-10">
+      <div class="absolute top-0 left-0 w-full overflow-hidden">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            fill="#ffff"
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="container mx-auto md:pt-28 md:pb-20 pt-10">
+        <div class="flex flex-col md:flex-row items-center gap-10 justify-between">
+          <div>
+            <a href=""><h1 class="text-3xl drop-shadow text-white font-bold text-center">IMAGINE</h1></a>
+            <span>Where Dreams Comes True</span>
+          </div>
+          <!-- Links Section -->
+          <div class="text-center">
+            <h2 class="text-lg font-bold mb-4">Links</h2>
+            <ul class="list-none space-y-3">
+              <li><a href="#" class="hover:text-gray-300">Home</a></li>
+              <li><a href="#" class="hover:text-gray-300">About</a></li>
+              <li><a href="#" class="hover:text-gray-300">Services</a></li>
+              <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Important Section -->
+          <div class="text-center">
+            <h2 class="text-lg font-bold mb-4">Important</h2>
+            <ul class="list-none space-y-3">
+              <li><a href="#" class="hover:text-gray-300">Terms of Use</a></li>
+              <li><a href="#" class="hover:text-gray-300">Refund Policy</a></li>
+              <li><a href="#" class="hover:text-gray-300">Shipping Policy</a></li>
+              <li><a href="#" class="hover:text-gray-300">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div class="text-center">
+            <h2 class="text-lg font-bold mb-4">Newsletter</h2>
+            <p class="mb-4">Subscribe to our newsletter to receive updates on our latest products and promotions.</p>
+            <form>
+              <div class="flex flex-wrap mx-2 p-3 md:p-0">
+                <div class="mx-auto w-3/4 md:w-2/3 px-2 mb-4 md:mb-0">
+                  <input
+                    type="email"
+                    class="w-full bg-white rounded-md py-2 px-3 text-gray-300 placeholder-gray-400"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+                <div class="mx-auto md:w-1/3 px-2">
+                  <button type="submit" class="w-full bg-[#BDE0FE] rounded-md py-2 px-4 text-gray-700">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!---------------------------------INTERNAL CSS ------------------------------------>
+    <style>
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-500px);
+        }
+      }
+      .slide-animation {
+        animation: slide 30s linear infinite;
+      }
+    </style>
+    <!---------------------------------END INTERNAL CSS ------------------------------------>
+
+    <script src="app.js"></script>
+  </body>
+</html>
