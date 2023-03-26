@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +11,8 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
-  <body class="font-[Ubuntu] overflow-x-hidden">
-    <!---------------------------------NVIGATION SECTION ------------------------------------>
+  <body class="body font-[Ubuntu] overflow-x-hidden">
+    <!---------------------------------NAVIGATION SECTION ------------------------------------>
     <div>
       <nav class="md:w-[89%] w-[95%] my-0 mx-auto flex justify-between p-2 items-center overflow-hidden">
         <div>
@@ -29,13 +29,13 @@
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="/">Services</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -49,7 +49,7 @@
     <!---------------------------------END NAVIGATION SECTION ------------------------------------>
 
     <!---------------------------------HEADER SECTION ------------------------------------>
-    <header class="h-[100vh] bg-[#BDE0FE] overflow-hidden relative">
+    <header class="h-[100vh] bg-[#BDE0FE] overflow-hidden relative max-w-[1500px]">
       <div
         class="md:w-[89%] w-[95%] my-0 mx-auto bg-[#BDE0FE] flex flex-col items-center md:grid md:grid-cols-3 justify-between h-[100vh]"
       >
@@ -87,26 +87,20 @@
     <!---------------------------------END HEADER SECTION ------------------------------------>
 
     <!---------------------------------SPONSORS SECTION ------------------------------------>
-    <section>
+    <section id="services">
       <div class="h-[100px] flex items-center m-auto overflow-hidden relative w-auto flex-col">
         <h1 class="mt-2 text-1xl drop-shadow text-[#8D8A88]">FEATURED IN</h1>
-        <div
-          style="
-            filter: brightness(0) saturate(100%) invert(94%) sepia(75%) saturate(3380%) hue-rotate(288deg)
-              brightness(101%) contrast(106%);
-          "
-          class="slide-animation items-center flex w-auto w-full gap-9"
-        >
-          <img class="max-w-[130px]" src="images/usatoday.png" alt="usa logo" />
-          <img class="max-w-[130px]" src="images/techcrunch.png" alt="tech crunch logo" />
-          <img class="max-w-[130px]" src="images/lifehacker.png" alt="life hacker logo" />
-          <img class="max-w-[130px]" src="images/gizmodo.png" alt="gizmodo logo" />
-          <img class="max-w-[130px]" src="images/tnwlogo.png" alt="tnw logo" />
-          <img class="max-w-[130px]" src="images/engadget.png" alt="engadget logo" />
-          <img class="max-w-[130px]" src="images/lemonde.png" alt="lemonde logo" />
-          <img class="max-w-[130px]" src="images/moz.png" alt="moz logo" />
-          <img class="max-w-[130px]" src="images/bloom.svg.png" alt="bloomberg logo" />
-          <img class="max-w-[130px]" src="images/buzzfeed.png" alt="buzzfeed logo" />
+        <div class="slide-animation items-center flex w-auto w-full gap-9">
+          <img class="filter max-w-[130px]" src="images/usatoday.png" alt="usa logo" />
+          <img class="filter max-w-[130px]" src="images/techcrunch.png" alt="tech crunch logo" />
+          <img class="filter max-w-[130px]" src="images/lifehacker.png" alt="life hacker logo" />
+          <img class="filter max-w-[130px]" src="images/gizmodo.png" alt="gizmodo logo" />
+          <img class="filter max-w-[130px]" src="images/tnwlogo.png" alt="tnw logo" />
+          <img class="filter max-w-[130px]" src="images/engadget.png" alt="engadget logo" />
+          <img class="filter max-w-[130px]" src="images/lemonde.png" alt="lemonde logo" />
+          <img class="filter max-w-[130px]" src="images/moz.png" alt="moz logo" />
+          <img class="filter max-w-[130px]" src="images/bloom.svg.png" alt="bloomberg logo" />
+          <img class="filter max-w-[130px]" src="images/buzzfeed.png" alt="buzzfeed logo" />
         </div>
       </div>
     </section>
@@ -118,7 +112,7 @@
         <h1 class="text-3xl text-white drop-shadow-xl inline-block p-2 rounded-xl">CHOOSE YOUR PACKAGE</h1>
         <p>All packages includes 24 hour maintenance</p>
       </div>
-      <div class="pricing-boxes flex items-center justify-center gap-2 mb-10 flex-wrap">
+      <div class="pricing-boxes flex items-center justify-center mb-10 flex-wrap gap-8 md:gap-2">
         <div class="box-1 w-[250px] bg-white text-center rounded shadow-xl">
           <div class="box-title my-3">
             <h3 class="text-2xl">DREAMER</h3>
@@ -181,7 +175,7 @@
     <!--------------------------------- END PRICING SECTION ------------------------------------>
 
     <!---------------------------------ABOUT SECTION ------------------------------------>
-    <section class="p-5">
+    <section id="about" class="p-5">
       <div class="md:w-[89%] w-[95%] mx-auto flex max-[885px]:flex-col mt-5 items-center justify-center gap-4">
         <div class="lg:mr-[-7rem] z-10">
           <img class="lg:w-[89%] max-md:w-[full] mx-auto max-[885px]:h-auto" src="images/about.png" alt="about image" />
@@ -207,104 +201,61 @@
     <!---------------------------------END ABOUT SECTION ------------------------------------>
 
     <!---------------------------------CONTACT SECTION ------------------------------------>
-
-    <div class="p-2">
-      <div class="grid p-5 items-center justify-items-center md:grid-cols-2">
-        <div
-          class="p-4 h-200 w-full flex flex-col justify-center gap-4 order-last mt-4 md:mt-0 md:order-first overflow-hidden"
-        >
-          <div
-            class="group rounded-xl bg-white self-center md:self-end shadow p-3 flex flex-row items-center max-w-[375px] min-w-[375px] justify-center gap-4 border overflow-hidden relative cursor-pointer"
-          >
-            <span
-              class="absolute left-16 z-0 h-12 w-12 rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:scale-[20] mx-auto"
-            ></span>
-            <span
-              class="grid h-16 w-16 place-items-center rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:bg-white z-10"
-            >
-              <ion-icon class="p-3 rounded-full text-4xl text-white group-hover:bg-[#BDE0FE]" name="call"></ion-icon>
-            </span>
-            <span class="text-[24px] drop-shadow-lg group-hover:text-white duration-300 drop-shadow-sm text-gray-400"
-              >1800-382-4937
-            </span>
+    <section id="contact" class="max-w-[1500px] md:py-24 py-16">
+      <div class="flex items-center p-8 gap-12 md:flex-row flex-col">
+        <div class="flex flex-col text-center gap-2">
+          <div class="text-6xl text-white">
+            <ion-icon class="bg-[#FFAFCC] p-3 rounded-xl" name="home"></ion-icon>
           </div>
-          <div
-            class="group rounded-xl bg-white self-center md:self-end shadow p-3 flex flex-row items-center h-24 justify-center gap-4 border overflow-hidden relative max-w-[375px] min-w-[375px] cursor-pointer"
-          >
-            <span
-              class="absolute left-12 z-0 h-12 w-12 rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:scale-[20] mx-auto shadow-lg"
-            ></span>
-            <span
-              class="grid h-16 w-16 place-items-center rounded-full bg-[#ffc8dd] transition-all duration-300 group-hover:bg-white z-10"
-            >
-              <ion-icon class="p-3 rounded-full text-4xl text-white group-hover:bg-[#BDE0FE]" name="mail"></ion-icon>
-            </span>
-            <span class="drop-shadow-sm text-gray-400 group-hover:text-white duration-300 text-[24px]"
-              >info@imagine.com</span
+          <div class="text-2xl border-b-2 w-1/2 mx-auto">VISIT US</div>
+          <div class="w-3/4 mx-auto">
+            <span class="text-[#8D8A88]"
+              >We are open 7 days a week 5am - 5pm. Appointment is needed so please call to schedule one.</span
             >
           </div>
-          <div
-            class="group rounded-xl self-center md:self-end shadow p-3 flex items-center h-24 justify-around border overflow-hidden relative max-w-[375px] min-w-[375px] cursor-pointer bg-[#ffc8dd] space-x-5"
-          >
-            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-twitter"></ion-icon>
-            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-linkedin"></ion-icon>
-            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-instagram"></ion-icon>
-            <ion-icon class="text-2xl rounded-full bg-white p-3 text-[#FFAFCC] shadow" name="logo-facebook"></ion-icon>
+          <div>
+            <span class="text-[#5c86a7] uppercase">5483 ImagineMedia Blv Raleigh, NC</span>
           </div>
         </div>
-
-        <div class="p-5 w-full md:w-3/4 bg-[#BDE0FE] justify-self-start rounded-xl mx-auto overflow-hidden">
-          <div class="w-full mx-auto">
-            <form class="w-full mx-auto mr-5">
-              <div class="mb-4">
-                <label class="block text-gray-500 font-bold mb-2" for="name"> Name </label>
-                <input
-                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="name"
-                  type="text"
-                  placeholder="First and Last Name"
-                />
-              </div>
-              <div class="mb-4">
-                <label class="block text-gray-500 font-bold mb-2" for="email"> Email </label>
-                <input
-                  class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="email"
-                  type="email"
-                  placeholder="Email Address"
-                />
-              </div>
-              <div class="mb-4">
-                <label class="block text-gray-500 font-bold mb-2" for="reason"> Reason for Contact: </label>
-                <textarea
-                  class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="reason"
-                  rows="5"
-                  placeholder="Please enter your reason here"
-                ></textarea>
-              </div>
-              <div class="flex items-center justify-center">
-                <button
-                  class="bg-[#ffc8dd] shadow hover:bg-[#FFAFCC] duration-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="button"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
+        <div class="flex flex-col text-center gap-2">
+          <div class="text-6xl text-white">
+            <ion-icon class="bg-[#FFAFCC] p-3 rounded-xl" name="chatbox"></ion-icon>
+          </div>
+          <div class="text-2xl border-b-2 w-1/2 mx-auto">CHAT WITH US</div>
+          <div class="w-3/4 mx-auto">
+            <span class="text-[#8D8A88]">
+              Chat with one of our professional agents. Our Live chat is available 24/7
+            </span>
+          </div>
+          <div>
+            <span class="text-[#5c86a7] uppercase">Chat now with an agent</span>
+          </div>
+        </div>
+        <div class="flex flex-col text-center gap-2">
+          <div class="text-6xl text-white">
+            <ion-icon class="bg-[#FFAFCC] p-3 rounded-xl" name="mail"></ion-icon>
+          </div>
+          <div class="text-2xl border-b-2 w-1/2 mx-auto">EMAIL US</div>
+          <div class="w-3/4 mx-auto">
+            <span class="text-[#8D8A88]">
+              Please allow 48 Hours for a response. Please send your full name and reason for contact.
+            </span>
+          </div>
+          <div>
+            <span class="text-[#5c86a7] uppercase">EMAIL US NOW</span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!---------------------------------END CONTACT SECTION ------------------------------------>
 
     <!---------------------------------FOOTER SECTION ------------------------------------>
 
-    <footer class="footer bg-[#FFAFCC] text-white relative mt-10">
-      <div class="absolute top-0 left-0 w-full overflow-hidden">
+    <footer class="footer bg-[#FFAFCC] text-white relative">
+      <div class="absolute top-[-1px] left-0 w-full overflow-hidden">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
-            fill="#ffff"
+            fill="#fff"
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
             class="shape-fill"
           ></path>
@@ -375,6 +326,11 @@
       }
       .slide-animation {
         animation: slide 30s linear infinite;
+      }
+
+      .filter {
+        filter: brightness(0) saturate(100%) invert(94%) sepia(75%) saturate(3380%) hue-rotate(288deg) brightness(101%)
+          contrast(106%);
       }
     </style>
     <!---------------------------------END INTERNAL CSS ------------------------------------>
